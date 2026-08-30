@@ -82,34 +82,36 @@ export default function Skills() {
     <section
       id="skills"
       ref={containerRef}
-      className="py-24 px-6 md:px-12 w-full max-w-7xl mx-auto flex flex-col justify-center min-h-[600px] scroll-mt-16"
+      className="w-full scroll-mt-16 bg-cream-accent px-6 py-24 md:px-12"
     >
-      <h2 className="font-display text-5xl md:text-7xl text-dark-charcoal mb-16 tracking-wide text-left">
-        SKILLS & STACK
-      </h2>
+      <div className="mx-auto flex min-h-[600px] w-full max-w-7xl flex-col justify-center">
+        <h2 className="mb-16 text-left font-display text-5xl tracking-wide text-[#0B1E3D] md:text-7xl">
+          SKILLS & STACK
+        </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 skills-grid">
-        {SKILLS_DATA.map((cat, catIdx) => (
-          <div
-            key={catIdx}
-            className="skill-category-card p-8 bg-transparent border-2 border-dashed border-dark-charcoal/30 rounded-2xl flex flex-col gap-6"
-          >
-            <h3 className="category-title font-body text-xl font-bold uppercase tracking-wider text-dark-charcoal border-b-2 border-dark-charcoal/20 pb-3 select-none">
-              {cat.category}
-            </h3>
+        <div className="skills-grid grid grid-cols-1 gap-8 md:grid-cols-3">
+          {SKILLS_DATA.map((cat, catIdx) => (
+            <div
+              key={catIdx}
+              className="skill-category-card flex flex-col gap-6 rounded-2xl border-2 border-dashed border-[#0B1E3D]/70 bg-transparent p-8"
+            >
+              <h3 className="category-title select-none border-b-2 border-[#0B1E3D]/30 pb-3 font-body text-xl font-bold uppercase tracking-wider text-[#0B1E3D]">
+                {cat.category}
+              </h3>
 
-            <div className="flex flex-wrap gap-3">
-              {cat.skills.map((skill, skillIdx) => (
-                <div
-                  key={skillIdx}
-                  className="skill-tag font-body text-xs md:text-sm font-semibold text-dark-charcoal bg-[#DFDAC3] border-2 border-dark-charcoal px-4 py-2 rounded-xl shadow-[3px_3px_0px_0px_#1C1C1C] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[5px_5px_0px_0px_#1C1C1C] active:translate-x-[0px] active:translate-y-[0px] active:shadow-[3px_3px_0px_0px_#1C1C1C] transition-all cursor-default select-none"
-                >
-                  {skill}
-                </div>
-              ))}
+              <div className="flex flex-wrap gap-3">
+                {cat.skills.map((skill, skillIdx) => (
+                  <div
+                    key={skillIdx}
+                    className="skill-tag cursor-default select-none rounded-xl border-2 border-[#0B1E3D] bg-[#E8ECF2] px-4 py-2 font-body text-xs font-semibold text-[#0B1E3D] shadow-[3px_3px_0px_0px_#0B1E3D] transition-all hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[5px_5px_0px_0px_#0B1E3D] active:translate-x-[0px] active:translate-y-[0px] active:shadow-[3px_3px_0px_0px_#0B1E3D] md:text-sm"
+                  >
+                    {skill}
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );
