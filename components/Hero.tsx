@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative h-screen min-h-[700px] w-full overflow-hidden bg-[#87CEEB] pt-16 select-none"
+      className="relative h-screen min-h-[700px] w-full overflow-hidden bg-[#DFDAC3] pt-16 select-none"
     >
       {/* Layout Content Wrapper */}
       <div className="relative h-full w-full">
@@ -19,7 +19,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className={`${portfolioTextClass} z-0 text-cream-accent`}
+          className={`${portfolioTextClass} z-0 text-[#BE3519]`}
         >
           PORTFOLIO
         </motion.h1>
@@ -46,7 +46,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-          className={`${portfolioTextClass} z-20 text-stroke`}
+          className={`${portfolioTextClass} z-20 text-stroke text-transparent [-webkit-text-stroke:1.5px_#BE3519]`}
           aria-hidden="true"
         >
           PORTFOLIO
