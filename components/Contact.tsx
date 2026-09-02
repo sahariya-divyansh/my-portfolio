@@ -23,10 +23,10 @@ export default function Contact() {
   };
 
   const socials = [
-    { icon: Mail, href: "mailto:divyansh.sahariya@example.com", label: "Email" },
+    { icon: Mail, href: "mailto:divyansh777sahariya@gmail.com", label: "Email" },
     { icon: GithubIcon, href: "https://github.com/sahariya-divyansh", label: "GitHub" },
-    { icon: LinkedinIcon, href: "https://linkedin.com/in/placeholder", label: "LinkedIn" },
-    { icon: InstagramIcon, href: "https://instagram.com/placeholder", label: "Instagram" },
+    { icon: LinkedinIcon, href: "https://linkedin.com/in/divyanshsahariya", label: "LinkedIn" },
+    { icon: InstagramIcon, href: "https://instagram.com/divyanxshhh", label: "Instagram" },
   ];
 
   return (
