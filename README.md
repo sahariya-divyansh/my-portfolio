@@ -8,30 +8,30 @@
 
 My personal portfolio — built to showcase my work, skills, and experience as a [Your Role, e.g. Senior Full-Stack Developer]. Designed for performance, accessibility, and a clean developer-first codebase.
 
-🔗 **Live site:** [yourdomain.com](https://yourdomain.com)
+ **Live site:** [yourdomain.com](https://yourdomain.com)
 
 ---
 
-## 📸 Preview
+## Preview
 
 ![Portfolio preview](./public/preview.png)
 
 ---
 
-## ✨ Features
+##  Features
 
-- ⚡️ Built with Next.js App Router for fast, SEO-friendly rendering
-- 🎨 Fully responsive UI with Tailwind CSS
-- 🌗 Light/dark mode support
-- 🧩 Modular, reusable component architecture
-- 📄 Dynamic project & blog pages powered by [MDX / CMS / JSON — pick one]
-- 📬 Contact form integrated with [Resend / EmailJS / Formspree]
-- 🚀 Optimized for Lighthouse performance (95+ scores)
-- ♿ Accessibility-first markup (WCAG-friendly)
+-  Built with Next.js App Router for fast, SEO-friendly rendering
+-  Fully responsive UI with Tailwind CSS
+-  Light/dark mode support
+-  Modular, reusable component architecture
+-  Dynamic project & blog pages powered by [MDX / CMS / JSON — pick one]
+-  Contact form integrated with [Resend / EmailJS / Formspree]
+-  Optimized for Lighthouse performance (95+ scores)
+-  Accessibility-first markup (WCAG-friendly)
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 | Category         | Technology                          |
 |-------------------|--------------------------------------|
@@ -45,7 +45,7 @@ My personal portfolio — built to showcase my work, skills, and experience as a
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 .
 ├── app/ # App Router pages & layouts
@@ -58,7 +58,7 @@ My personal portfolio — built to showcase my work, skills, and experience as a
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 Clone the repo and install dependencies:
 
@@ -78,7 +78,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ---
 
-## 📜 Available Scripts
+## Available Scripts
 
 | Command           | Description                        |
 |--------------------|-------------------------------------|
@@ -89,7 +89,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ---
 
-## 🌐 Deployment
+## Deployment
 
 This project is deployed on [Vercel](https://vercel.com/). Every push to `main` triggers an automatic production deployment.
 
@@ -97,7 +97,7 @@ This project is deployed on [Vercel](https://vercel.com/). Every push to `main` 
 
 ---
 
-## 📬 Contact
+## Contact
 
 - **Portfolio:** [yourdomain.com](https://yourdomain.com)
 - **LinkedIn:** [linkedin.com/in/yourname](#)
@@ -106,6 +106,6 @@ This project is deployed on [Vercel](https://vercel.com/). Every push to `main` 
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the [MIT License](LICENSE).
