@@ -100,9 +100,9 @@ This project is deployed on [Vercel](https://vercel.com/). Every push to `main` 
 ## Contact
 
 - **Portfolio:** [yourdomain.com](https://yourdomain.com)
-- **LinkedIn:** [linkedin.com/in/yourname](#)
-- **GitHub:** [github.com/yourusername](#)
-- **Email:** you@example.com
+- **LinkedIn:** [linkedin.com/in/divyanshsahariya](#)
+- **GitHub:** [github.com/sahariya-divyansh](#)
+- **Email:** divyansh777sahariya@gmail.com
 
 ---
 
