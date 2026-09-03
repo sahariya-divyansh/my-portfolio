@@ -15,8 +15,8 @@ const PROJECTS_DATA = [
     description:
       "C cache simulator comparing LRU, FIFO, and Random replacement policies across configurable cache sizes and associativity, with benchmark visualization in Python.",
     tags: ["Next.js", "Elasticsearch", "TypeScript", "Tailwind CSS"],
-    github: "https://github.com/placeholder/omnisearch",
-    demo: "https://demo.omnisearch.example.com",
+    github: "https://github.com/sahariya-divyansh/cache-sim",
+    demo: "https://github.com/sahariya-divyansh/cache-sim",
   },
   {
     title: "Aether UI Kit",
