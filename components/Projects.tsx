@@ -11,9 +11,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 const PROJECTS_DATA = [
   {
-    title: "OmniSearch Dashboard",
+    title: "cache-sim",
     description:
-      "A real-time data visualizer and search indexer leveraging Next.js, Elasticsearch, and high-performance charts to aggregate complex multi-source search datasets.",
+      "C cache simulator comparing LRU, FIFO, and Random replacement policies across configurable cache sizes and associativity, with benchmark visualization in Python.",
     tags: ["Next.js", "Elasticsearch", "TypeScript", "Tailwind CSS"],
     github: "https://github.com/placeholder/omnisearch",
     demo: "https://demo.omnisearch.example.com",
