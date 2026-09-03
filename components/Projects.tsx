@@ -14,7 +14,7 @@ const PROJECTS_DATA = [
     title: "cache-sim",
     description:
       "C cache simulator comparing LRU, FIFO, and Random replacement policies across configurable cache sizes and associativity, with benchmark visualization in Python.",
-    tags: ["Next.js", "Elasticsearch", "TypeScript", "Tailwind CSS"],
+    tags: ["C", "Python", "PowerShell", "Shell"],
     github: "https://github.com/sahariya-divyansh/cache-sim",
     demo: "https://github.com/sahariya-divyansh/cache-sim",
   },
