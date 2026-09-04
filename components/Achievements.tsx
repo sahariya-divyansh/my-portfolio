@@ -9,10 +9,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ACHIEVEMENTS_DATA = [
   {
-    title: "AWS Solutions Architect",
-    issuer: "Amazon Web Services",
-    date: "2025",
-    description: "Successfully certified in designing high-availability, fault-tolerant, and cost-effective cloud architectures.",
+    title: "HackIndia Spark 6 Finalist",
+    issuer: "HackIndia",
+    date: "2026",
+    description: "Secured 5th place among 1,500+ Teams at HackIndia Spark 6, one of India's largest student hackathons, held over 2 days at the National Institute of Technology, Delhi.",
     icon: ShieldCheck,
     rotate: "-rotate-2",
     width: "lg:w-[92%]",
