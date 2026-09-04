@@ -19,7 +19,7 @@ const PROJECTS_DATA = [
     demo: "https://github.com/sahariya-divyansh/cache-sim",
   },
   {
-    title: "Aether UI Kit",
+    title: "GeoMangan-AI",
     description:
       "AI/ML + Satellite-based platform for manganese reserve mapping and production shortfall prediction.",
     tags: ["Python", "CSS", "TypeScript", "JavaScript"],
@@ -27,12 +27,12 @@ const PROJECTS_DATA = [
     demo: "https://github.com/sahariya-divyansh/GeoMangan-AI",
   },
   {
-    title: "Chronos Task Engine",
+    title: "Causway",
     description:
-      "A highly scalable, distributed task scheduling and cron execution engine running on Node.js and Redis, capable of processing millions of concurrent queues.",
+      "Causeway is a sync engine purpose-built and benchmarked for sustained low bandwidth conditions, unlike existing tools which target brief disconnection.",
     tags: ["Node.js", "Redis", "TypeScript", "Docker"],
-    github: "https://github.com/placeholder/chronos-engine",
-    demo: "https://demo.chronos.example.com",
+    github: "https://github.com/sahariya-divyansh/causeway",
+    demo: "https://github.com/sahariya-divyansh/causeway",
   },
   {
     title: "Synapse Secure Chat",
