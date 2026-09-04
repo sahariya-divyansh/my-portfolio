@@ -21,10 +21,10 @@ const PROJECTS_DATA = [
   {
     title: "Aether UI Kit",
     description:
-      "A lightweight, fully accessible component library built from scratch, optimized for fluid layout animations, custom transitions, and dark-mode defaults.",
-    tags: ["React", "Framer Motion", "TypeScript", "Vanilla CSS"],
-    github: "https://github.com/placeholder/aether-ui",
-    demo: "https://demo.aether-ui.example.com",
+      "AI/ML + Satellite-based platform for manganese reserve mapping and production shortfall prediction.",
+    tags: ["Python", "CSS", "TypeScript", "JavaScript"],
+    github: "https://github.com/sahariya-divyansh/GeoMangan-AI",
+    demo: "https://github.com/sahariya-divyansh/GeoMangan-AI",
   },
   {
     title: "Chronos Task Engine",
