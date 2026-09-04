@@ -35,12 +35,12 @@ const PROJECTS_DATA = [
     demo: "https://github.com/sahariya-divyansh/causeway",
   },
   {
-    title: "Synapse Secure Chat",
+    title: "Exoplanet Detector",
     description:
-      "An end-to-end encrypted chat web application that implements Web Crypto DH key exchanges, real-time message streams, and database persistence.",
-    tags: ["React", "WebSockets", "Web Crypto API", "PostgreSQL"],
-    github: "https://github.com/placeholder/synapse-chat",
-    demo: "https://demo.synapse.example.com",
+      "An end-to-end deep learning pipeline that detects exoplanets from noisy Kepler space telescope light curve data.",
+    tags: ["Python", "WebSockets", "Web Crypto API", "PostgreSQL"],
+    github: "https://github.com/sahariya-divyansh/exoplanet-detector",
+    demo: "https://github.com/sahariya-divyansh/exoplanet-detector",
   },
 ];
 
