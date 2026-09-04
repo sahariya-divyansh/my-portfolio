@@ -30,7 +30,7 @@ const PROJECTS_DATA = [
     title: "Causway",
     description:
       "Causeway is a sync engine purpose-built and benchmarked for sustained low bandwidth conditions, unlike existing tools which target brief disconnection.",
-    tags: ["Node.js", "Redis", "TypeScript", "Docker"],
+    tags: ["JavaScript", "Shell", "TypeScript", "JSON"],
     github: "https://github.com/sahariya-divyansh/causeway",
     demo: "https://github.com/sahariya-divyansh/causeway",
   },
