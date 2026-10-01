@@ -32,15 +32,15 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-24 px-6 md:px-12 w-full max-w-7xl mx-auto flex flex-col md:flex-row gap-16 min-h-[600px] scroll-mt-16 justify-between"
+      className="py-24 px-6 md:px-12 w-full max-w-7xl mx-auto flex flex-col md:flex-row gap-16 min-h-[600px] scroll-mt-16 justify-between bg-[#DFDAC3]"
     >
       {/* Contact info column */}
       <div className="w-full md:w-5/12 flex flex-col justify-between py-2">
         <div>
-          <h2 className="font-display text-5xl md:text-7xl text-dark-charcoal mb-8 tracking-wide">
+          <h2 className="font-display text-5xl md:text-7xl text-[#BE3519] mb-8 tracking-wide">
             GET IN TOUCH
           </h2>
-          <p className="font-body text-base md:text-lg text-dark-charcoal/80 mb-8 leading-relaxed max-w-md">
+          <p className="font-body text-base md:text-lg text-[#522A25]/90 mb-8 leading-relaxed max-w-md">
             Have a project in mind, a job opportunity, or just want to say hello? Drop a message in the form, or reach out directly via my socials. I&apos;d love to connect!
           </p>
         </div>
@@ -56,11 +56,11 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.label}
-                className="p-4 bg-[#DFDAC3] border-2 border-dark-charcoal rounded-xl shadow-[3px_3px_0px_0px_#1C1C1C] text-dark-charcoal hover:bg-dark-charcoal hover:text-[#DFDAC3] transition-all duration-300"
+                className="p-4 bg-[#DFDAC3] border-2 border-[#522A25] rounded-xl shadow-[3px_3px_0px_0px_#522A25] text-[#522A25] hover:bg-[#522A25] hover:text-[#DFDAC3] transition-all duration-300"
                 whileHover={{
                   y: -4,
                   x: -1,
-                  boxShadow: "5px 5px 0px 0px #1C1C1C",
+                  boxShadow: "5px 5px 0px 0px #522A25",
                 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -73,10 +73,10 @@ export default function Contact() {
 
       {/* Form column */}
       <div className="w-full md:w-6/12">
-        <form onSubmit={handleSubmit} className="flex flex-col gap-6 p-8 bg-[#DFDAC3]/20 border-2 border-dashed border-dark-charcoal/30 rounded-2xl">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-6 p-8 bg-[#DFDAC3] border-2 border-dashed border-[#522A25] rounded-2xl shadow-[4px_4px_0px_0px_#522A25]">
           {/* Name Field */}
           <div className="flex flex-col gap-2">
-            <label htmlFor="name" className="font-body text-xs font-bold uppercase tracking-widest text-dark-charcoal">
+            <label htmlFor="name" className="font-body text-xs font-bold uppercase tracking-widest text-[#522A25]">
               Name
             </label>
             <input
@@ -86,13 +86,13 @@ export default function Contact() {
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
               placeholder="Your Name"
-              className="font-body text-sm text-dark-charcoal bg-transparent border-2 border-dark-charcoal/40 rounded-xl px-4 py-3 outline-none transition-all focus:border-dark-charcoal focus:shadow-[3px_3px_0px_0px_#1C1C1C] placeholder:text-dark-charcoal/40"
+              className="font-body text-sm text-[#522A25] bg-[#F8F5EC] border-2 border-[#522A25] rounded-xl px-4 py-3 outline-none transition-all focus:border-[#522A25] focus:shadow-[3px_3px_0px_0px_#522A25] placeholder:text-[#522A25]/50"
             />
           </div>
 
           {/* Email Field */}
           <div className="flex flex-col gap-2">
-            <label htmlFor="email" className="font-body text-xs font-bold uppercase tracking-widest text-dark-charcoal">
+            <label htmlFor="email" className="font-body text-xs font-bold uppercase tracking-widest text-[#522A25]">
               Email
             </label>
             <input
@@ -102,13 +102,13 @@ export default function Contact() {
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               placeholder="your.email@example.com"
-              className="font-body text-sm text-dark-charcoal bg-transparent border-2 border-dark-charcoal/40 rounded-xl px-4 py-3 outline-none transition-all focus:border-dark-charcoal focus:shadow-[3px_3px_0px_0px_#1C1C1C] placeholder:text-dark-charcoal/40"
+              className="font-body text-sm text-[#522A25] bg-[#F8F5EC] border-2 border-[#522A25] rounded-xl px-4 py-3 outline-none transition-all focus:border-[#522A25] focus:shadow-[3px_3px_0px_0px_#522A25] placeholder:text-[#522A25]/50"
             />
           </div>
 
           {/* Message Field */}
           <div className="flex flex-col gap-2">
-            <label htmlFor="message" className="font-body text-xs font-bold uppercase tracking-widest text-dark-charcoal">
+            <label htmlFor="message" className="font-body text-xs font-bold uppercase tracking-widest text-[#522A25]">
               Message
             </label>
             <textarea
@@ -118,7 +118,7 @@ export default function Contact() {
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
               placeholder="Describe your project or enquiry here..."
-              className="font-body text-sm text-dark-charcoal bg-transparent border-2 border-dark-charcoal/40 rounded-xl px-4 py-3 outline-none resize-none transition-all focus:border-dark-charcoal focus:shadow-[3px_3px_0px_0px_#1C1C1C] placeholder:text-dark-charcoal/40"
+              className="font-body text-sm text-[#522A25] bg-[#F8F5EC] border-2 border-[#522A25] rounded-xl px-4 py-3 outline-none resize-none transition-all focus:border-[#522A25] focus:shadow-[3px_3px_0px_0px_#522A25] placeholder:text-[#522A25]/50"
             />
           </div>
 
@@ -126,7 +126,7 @@ export default function Contact() {
           <button
             type="submit"
             disabled={status !== "idle"}
-            className="flex items-center justify-center gap-2 font-body text-xs font-bold uppercase tracking-widest text-[#DFDAC3] bg-[#1C1C1C] border-2 border-dark-charcoal rounded-xl py-4 hover:bg-transparent hover:text-dark-charcoal transition-all duration-300 disabled:opacity-50 select-none cursor-pointer mt-2"
+            className="flex items-center justify-center gap-2 font-body text-xs font-bold uppercase tracking-widest text-[#DFDAC3] bg-[#522A25] border-2 border-[#522A25] rounded-xl py-4 hover:bg-[#3D1F1B] hover:border-[#3D1F1B] transition-all duration-300 disabled:opacity-50 select-none cursor-pointer mt-2"
           >
             {status === "sending" ? (
               "Sending..."
@@ -140,7 +140,7 @@ export default function Contact() {
           </button>
 
           {status === "success" && (
-            <p className="font-body text-xs font-bold text-green-700 text-center uppercase tracking-wider animate-pulse">
+            <p className="font-body text-xs font-bold text-[#BE3519] text-center uppercase tracking-wider animate-pulse">
               Thank you! I will get back to you shortly.
             </p>
           )}

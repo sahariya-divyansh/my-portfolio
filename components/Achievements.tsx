@@ -130,9 +130,9 @@ export default function Achievements() {
     <section
       id="achievements"
       ref={containerRef}
-      className="py-24 px-6 md:px-12 w-full max-w-7xl mx-auto flex flex-col justify-center min-h-[600px] scroll-mt-16"
+      className="py-24 px-6 md:px-12 w-full max-w-7xl mx-auto flex flex-col justify-center min-h-[600px] scroll-mt-16 bg-[#DFDAC3]"
     >
-      <h2 className="font-display text-5xl md:text-7xl text-dark-charcoal mb-16 tracking-wide text-left">
+      <h2 className="font-display text-5xl md:text-7xl text-[#BE3519] mb-16 tracking-wide text-left">
         ACHIEVEMENTS
       </h2>
 
@@ -142,9 +142,9 @@ export default function Achievements() {
           {PHOTO_COLLAGE.map((photo) => (
             <div
               key={photo.id}
-              className={`collage-photo absolute ${photo.size} ${photo.pos} ${photo.rotate} ${photo.z} bg-[#DFDAC3] border-2 border-dark-charcoal rounded-lg shadow-[4px_4px_0px_0px_#1C1C1C] overflow-hidden flex items-center justify-center transition-transform duration-300 hover:scale-105 hover:z-40`}
+              className={`collage-photo absolute ${photo.size} ${photo.pos} ${photo.rotate} ${photo.z} bg-[#DFDAC3] border-2 border-[#522A25] rounded-lg shadow-[4px_4px_0px_0px_#522A25] overflow-hidden flex items-center justify-center transition-transform duration-300 hover:scale-105 hover:z-40`}
             >
-              <div className="flex flex-col items-center gap-2 text-dark-charcoal/40">
+              <div className="flex flex-col items-center gap-2 text-[#522A25]/40">
                 <ImageIcon size={28} />
                 <span className="font-body text-[10px] uppercase tracking-widest">
                   Photo {photo.id}
@@ -154,10 +154,10 @@ export default function Achievements() {
           ))}
 
           {/* Decorative scrapbook elements */}
-          <div className="collage-decor absolute -top-6 -left-6 text-[#E8B84B] rotate-[-12deg] z-40">
+          <div className="collage-decor absolute -top-6 -left-6 text-[#BE3519] rotate-[-12deg] z-40">
             <Flower2 size={40} strokeWidth={1.5} />
           </div>
-          <div className="collage-decor absolute -bottom-4 right-6 text-dark-charcoal/70 rotate-[8deg] z-40">
+          <div className="collage-decor absolute -bottom-4 right-6 text-[#522A25] rotate-[8deg] z-40">
             <Sparkles size={28} strokeWidth={1.5} />
           </div>
         </div>
@@ -169,25 +169,25 @@ export default function Achievements() {
             return (
               <div
                 key={idx}
-                className={`achievement-card w-full ${item.width} ${item.align} ${item.margin} p-6 bg-transparent border-2 border-dark-charcoal rounded-2xl flex flex-col items-start gap-4 select-none relative group hover:bg-[#DFDAC3]/25 transition-all duration-300 ${item.rotate} hover:rotate-0`}
+                className={`achievement-card w-full ${item.width} ${item.align} ${item.margin} p-6 bg-[#DFDAC3] border-2 border-[#522A25] rounded-2xl flex flex-col items-start gap-4 select-none relative group shadow-[4px_4px_0px_0px_#522A25] transition-all duration-300 ${item.rotate} hover:rotate-0`}
               >
                 {/* Badge Icon */}
-                <div className="p-3 bg-[#DFDAC3] border-2 border-dark-charcoal rounded-xl shadow-[2px_2px_0px_0px_#1C1C1C] text-dark-charcoal transition-transform duration-300 group-hover:scale-110">
+                <div className="p-3 bg-[#DFDAC3] border-2 border-[#522A25] rounded-xl shadow-[2px_2px_0px_0px_#522A25] text-[#522A25] transition-transform duration-300 group-hover:scale-110">
                   <IconComponent size={24} />
                 </div>
 
                 {/* Title & Issuer */}
                 <div>
-                  <span className="font-body text-[10px] font-bold text-dark-charcoal/60 uppercase tracking-widest block mb-1">
+                  <span className="font-body text-[10px] font-bold text-[#522A25]/60 uppercase tracking-widest block mb-1">
                     {item.issuer} &bull; {item.date}
                   </span>
-                  <h3 className="font-body text-lg font-bold uppercase tracking-wider text-dark-charcoal leading-tight">
+                  <h3 className="font-body text-lg font-bold uppercase tracking-wider text-[#522A25] leading-tight">
                     {item.title}
                   </h3>
                 </div>
 
                 {/* Description */}
-                <p className="font-body text-xs md:text-sm text-dark-charcoal/80 leading-relaxed mt-2">
+                <p className="font-body text-xs md:text-sm text-[#522A25]/80 leading-relaxed mt-2">
                   {item.description}
                 </p>
               </div>

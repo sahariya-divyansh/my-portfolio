@@ -35,7 +35,7 @@ export default function RootLayout({
       lang="en"
       className={`${caveat.variable} ${bebasNeue.variable} ${spaceGrotesk.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col bg-[#87CEEB] text-[#1C1C1C] font-body selection:bg-[#DFDAC3] selection:text-[#1C1C1C]">
+      <body className="min-h-full flex flex-col bg-[#DFDAC3] text-[#522A25] font-body selection:bg-[#BE3519] selection:text-[#DFDAC3]">
         {children}
       </body>
     </html>

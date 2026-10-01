@@ -84,31 +84,31 @@ export default function Experience() {
     <section
       id="experience"
       ref={containerRef}
-      className="py-24 px-6 md:px-12 w-full max-w-7xl mx-auto flex flex-col justify-center min-h-[600px] scroll-mt-16"
+      className="py-24 px-6 md:px-12 w-full max-w-7xl mx-auto flex flex-col justify-center min-h-[600px] scroll-mt-16 bg-[#DFDAC3]"
     >
-      <h2 className="font-display text-5xl md:text-7xl text-dark-charcoal mb-16 tracking-wide text-left">
+      <h2 className="font-display text-5xl md:text-7xl text-[#BE3519] mb-16 tracking-wide text-left">
         EXPERIENCE
       </h2>
 
       <div className="relative timeline-items-container pl-6 md:pl-10">
         {/* Main Background Line (Static thin line) */}
-        <div className="absolute left-[3px] md:left-[5px] top-2 bottom-2 w-[2px] bg-dark-charcoal/10" />
+        <div className="absolute left-[3px] md:left-[5px] top-2 bottom-2 w-[2px] bg-[#522A25]/20" />
 
         {/* Animated Drawing Line */}
-        <div className="absolute left-[3px] md:left-[5px] top-2 w-[2px] bg-dark-charcoal origin-top timeline-line-indicator" />
+        <div className="absolute left-[3px] md:left-[5px] top-2 w-[2px] bg-[#522A25] origin-top timeline-line-indicator" />
 
         <div className="flex flex-col gap-16">
           {EXPERIENCE_DATA.map((exp, idx) => (
             <div key={idx} className="relative timeline-item pl-8 md:pl-12 select-none group">
               {/* Timeline Bullet (Dot) */}
-              <div className="absolute left-[-26px] md:left-[-39px] top-1.5 w-4 h-4 md:w-5 md:h-5 rounded-full border-2 border-dark-charcoal bg-[#87CEEB] z-10 transition-transform duration-300 group-hover:scale-125" />
+              <div className="absolute left-[-26px] md:left-[-39px] top-1.5 w-4 h-4 md:w-5 md:h-5 rounded-full border-2 border-[#522A25] bg-[#522A25] z-10 transition-transform duration-300 group-hover:scale-125" />
 
               {/* Entry Content */}
               <div>
-                <span className="font-body text-xs md:text-sm font-bold text-dark-charcoal/60 uppercase tracking-widest block mb-1">
+                <span className="font-body text-xs md:text-sm font-bold text-[#522A25]/60 uppercase tracking-widest block mb-1">
                   {exp.duration} &bull; {exp.company}
                 </span>
-                <h3 className="font-body text-xl md:text-2xl font-bold uppercase tracking-wider text-dark-charcoal mb-4">
+                <h3 className="font-body text-xl md:text-2xl font-bold uppercase tracking-wider text-[#522A25] mb-4">
                   {exp.role}
                 </h3>
 
@@ -116,7 +116,7 @@ export default function Experience() {
                   {exp.bullets.map((bullet, bulletIdx) => (
                     <li
                       key={bulletIdx}
-                      className="font-body text-sm md:text-base text-dark-charcoal/80 leading-relaxed marker:text-dark-charcoal/40"
+                      className="font-body text-sm md:text-base text-[#522A25]/80 leading-relaxed marker:text-[#522A25]/60"
                     >
                       {bullet}
                     </li>

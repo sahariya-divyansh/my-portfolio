@@ -66,13 +66,13 @@ export default function Hero() {
           }
         }}
       >
-        <span className="font-body text-xs uppercase tracking-widest text-dark-charcoal/60 font-semibold">
+        <span className="font-body text-xs uppercase tracking-widest text-[#522A25]/60 font-semibold">
           Scroll Down
         </span>
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
-          className="w-1.5 h-6 bg-dark-charcoal/60 rounded-full"
+          className="w-1.5 h-6 bg-[#522A25]/60 rounded-full"
         />
       </motion.div>
     </section>

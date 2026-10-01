@@ -22,7 +22,7 @@ export default function Home() {
         <Blogs />
         <Contact />
       </main>
-      <footer className="w-full py-8 text-center text-xs font-body text-dark-charcoal/60 bg-[#87CEEB] border-t border-dark-charcoal/10 font-bold uppercase tracking-widest select-none">
+      <footer className="w-full py-8 text-center text-xs font-body text-[#522A25]/60 bg-[#DFDAC3] border-t border-[#522A25]/15 font-bold uppercase tracking-widest select-none">
         &copy; {new Date().getFullYear()} Divyansh Sahariya. All Rights Reserved.
       </footer>
     </>
