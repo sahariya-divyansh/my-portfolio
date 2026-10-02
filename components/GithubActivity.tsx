@@ -48,11 +48,11 @@ export default function GithubActivity() {
             title="A year of building, one commit at a time"
             unit="contribution"
             palette={{
-              light: ["#d4d4d4", "#a3a3a3", "#737373", "#000000"],
-              dark: ["#d4d4d4", "#a3a3a3", "#737373", "#000000"],
+              light: ["#9be9a8", "#40c463", "#30a14e", "#216e39"],
+              dark: ["#9be9a8", "#40c463", "#30a14e", "#216e39"],
             }}
             defaultView="3d"
-            className="!border-[#404040] !bg-[#ffffff] [&_h3]:!text-[#404040]"
+            className="!border-[#000000] !bg-white [&_h3]:!text-black"
           />
         </motion.div>
       </div>
