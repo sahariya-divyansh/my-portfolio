@@ -72,9 +72,9 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="py-24 px-6 md:px-12 w-full max-w-7xl mx-auto flex flex-col justify-center min-h-[600px] scroll-mt-16 bg-[#DFDAC3]"
+      className="py-24 px-6 md:px-12 w-full max-w-7xl mx-auto flex flex-col justify-center min-h-[600px] scroll-mt-16 bg-[#ffffff]"
     >
-      <h2 className="font-display text-5xl md:text-7xl text-[#BE3519] mb-16 tracking-wide text-left">
+      <h2 className="font-display text-5xl md:text-7xl text-[#000000] mb-16 tracking-wide text-left">
         SELECTED PROJECTS
       </h2>
 
@@ -82,18 +82,18 @@ export default function Projects() {
         {PROJECTS_DATA.map((project, idx) => (
           <motion.div
             key={idx}
-            className="project-card p-8 bg-[#DFDAC3] border-2 border-[#522A25] rounded-2xl flex flex-col justify-between shadow-[4px_4px_0px_0px_#522A25] transition-shadow duration-300"
+            className="project-card p-8 bg-[#ffffff] border-2 border-[#404040] rounded-2xl flex flex-col justify-between shadow-[4px_4px_0px_0px_#404040] transition-shadow duration-300"
             whileHover={{
               y: -8,
               x: -2,
-              boxShadow: "8px 8px 0px 0px #522A25",
+              boxShadow: "8px 8px 0px 0px #404040",
             }}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
           >
             <div>
               {/* Project Header */}
               <div className="flex justify-between items-start gap-4 mb-4">
-                <h3 className="font-body text-xl font-bold uppercase tracking-wider text-[#522A25]">
+                <h3 className="font-body text-xl font-bold uppercase tracking-wider text-[#404040]">
                   {project.title}
                 </h3>
                 <div className="flex items-center gap-3">
@@ -101,7 +101,7 @@ export default function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#522A25]/70 hover:text-[#522A25] transition-colors"
+                    className="text-[#404040]/70 hover:text-[#404040] transition-colors"
                     aria-label={`${project.title} GitHub repository`}
                   >
                     <GithubIcon size={20} />
@@ -110,7 +110,7 @@ export default function Projects() {
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#522A25]/70 hover:text-[#522A25] transition-colors"
+                    className="text-[#404040]/70 hover:text-[#404040] transition-colors"
                     aria-label={`${project.title} live demo`}
                   >
                     <ExternalLink size={20} />
@@ -119,17 +119,17 @@ export default function Projects() {
               </div>
 
               {/* Description */}
-              <p className="font-body text-sm md:text-base text-[#522A25]/80 mb-6 leading-relaxed">
+              <p className="font-body text-sm md:text-base text-[#404040]/80 mb-6 leading-relaxed">
                 {project.description}
               </p>
             </div>
 
             {/* Tech Tags */}
-            <div className="flex flex-wrap gap-2 pt-4 border-t border-[#522A25]/15">
+            <div className="flex flex-wrap gap-2 pt-4 border-t border-[#404040]/15">
               {project.tags.map((tag, tagIdx) => (
                 <span
                   key={tagIdx}
-                  className="font-body text-[10px] md:text-xs font-bold uppercase tracking-widest bg-[#522A25]/10 border border-[#522A25]/20 text-[#522A25] px-2.5 py-1 rounded-md select-none"
+                  className="font-body text-[10px] md:text-xs font-bold uppercase tracking-widest bg-[#404040]/10 border border-[#404040]/20 text-[#404040] px-2.5 py-1 rounded-md select-none"
                 >
                   {tag}
                 </span>

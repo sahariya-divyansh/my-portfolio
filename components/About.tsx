@@ -81,12 +81,12 @@ export default function About() {
     <section
       id="about"
       ref={containerRef}
-      className="w-full scroll-mt-16 bg-cream-accent px-6 py-24 text-[#522A25] md:px-12 lg:py-28"
+      className="w-full scroll-mt-16 bg-[#ffffff] px-6 py-24 text-[#404040] md:px-12 lg:py-28"
     >
       <div className="mx-auto grid w-full max-w-7xl items-center gap-16 lg:grid-cols-[0.9fr_1.1fr]">
         <div ref={mediaRef} className="relative mx-auto min-h-[31rem] w-full max-w-[34rem]">
           <div className="absolute left-1/2 top-1/2 h-[min(28rem,82vw)] w-[min(28rem,82vw)] -translate-x-1/2 -translate-y-1/2">
-            <div className="about-media-reveal relative h-full w-full overflow-hidden rounded-[60%_40%_55%_45%/50%_60%_40%_50%] border-2 border-[#522A25] bg-[#BE3519]/10 shadow-[10px_10px_0_0_rgba(82,42,37,0.18)]">
+            <div className="about-media-reveal relative h-full w-full overflow-hidden rounded-[60%_40%_55%_45%/50%_60%_40%_50%] border-2 border-[#404040] bg-[#000000]/10 shadow-[10px_10px_0_0_rgba(0,0,0,0.12)]">
               <Image
                 src="/images/about-photo.webp"
                 alt="Divyansh Sahariya"
@@ -98,7 +98,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="about-media-reveal absolute left-4 top-6 z-20 flex h-24 w-28 rotate-[-8deg] items-center justify-center rounded-[58%_42%_48%_52%/45%_55%_45%_55%] border-2 border-[#522A25] bg-[#DFDAC3] text-[#BE3519] shadow-[4px_4px_0_0_rgba(82,42,37,0.25)] md:left-0">
+          <div className="about-media-reveal absolute left-4 top-6 z-20 flex h-24 w-28 rotate-[-8deg] items-center justify-center rounded-[58%_42%_48%_52%/45%_55%_45%_55%] border-2 border-[#404040] bg-[#ffffff] text-[#000000] shadow-[4px_4px_0_0_rgba(0,0,0,0.15)] md:left-0">
             <svg viewBox="0 0 120 92" aria-hidden="true" className="h-16 w-20">
               <path
                 d="M22 25h76v43H22zM15 74h90M42 38 31 47l11 9M78 38l11 9-11 9M64 35 55 60"
@@ -114,7 +114,7 @@ export default function About() {
           {["Systems + AI curious", "Always prototyping"].map((text, index) => (
             <div
               key={text}
-              className={`about-media-reveal absolute z-20 max-w-[10.5rem] border-2 border-dotted border-[#522A25] bg-[#DFDAC3]/90 px-5 py-4 text-center font-script text-2xl leading-none text-[#522A25] shadow-[3px_3px_0_0_rgba(82,42,37,0.18)] ${bubbleVariants[index]}`}
+              className={`about-media-reveal absolute z-20 max-w-[10.5rem] border-2 border-dotted border-[#404040] bg-[#ffffff]/90 px-5 py-4 text-center font-script text-2xl leading-none text-[#404040] shadow-[3px_3px_0_0_rgba(0,0,0,0.12)] ${bubbleVariants[index]}`}
             >
               {text}
             </div>
@@ -128,10 +128,10 @@ export default function About() {
           transition={{ duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
           className="about-text"
         >
-          <p className="mb-5 font-body text-xs font-bold uppercase tracking-[0.32em] text-[#522A25]">
+          <p className="mb-5 font-body text-xs font-bold uppercase tracking-[0.32em] text-[#404040]">
             About Me
           </p>
-          <h2 className="max-w-3xl font-display text-6xl leading-[0.9] text-[#BE3519] sm:text-7xl lg:text-8xl">
+          <h2 className="max-w-3xl font-display text-6xl leading-[0.9] text-[#000000] sm:text-7xl lg:text-8xl">
             {HEADLINE_PLACEHOLDER}
           </h2>
 
@@ -142,10 +142,10 @@ export default function About() {
             transition={{ duration: 0.65, delay: 0.18, ease: [0.16, 1, 0.3, 1] }}
             className="mt-12 w-full max-w-4xl"
           >
-            <h3 className="mb-5 inline-block border-b-2 border-[#522A25] font-display text-4xl leading-none tracking-[0.04em] text-[#BE3519]">
+            <h3 className="mb-5 inline-block border-b-2 border-[#404040] font-display text-4xl leading-none tracking-[0.04em] text-[#000000]">
               WHAT DRIVES ME
             </h3>
-            <div className="space-y-5 font-body text-base leading-7 text-[#522A25]/90">
+            <div className="space-y-5 font-body text-base leading-7 text-[#404040]/90">
               {PHILOSOPHY.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
               ))}
@@ -164,7 +164,7 @@ export default function About() {
               y: -4,
               scale: 1.02,
               rotate: stat.rotate,
-              boxShadow: "0 18px 30px rgba(82, 42, 37, 0.28)",
+              boxShadow: "0 18px 30px rgba(0, 0, 0, 0.2)",
             }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{
@@ -174,17 +174,17 @@ export default function About() {
               mass: 0.9,
               delay: index * 0.15,
             }}
-            className="relative flex min-h-40 flex-col justify-center overflow-hidden rounded-[0.7rem_0.95rem_0.8rem_1.05rem] border-2 border-[#522A25] bg-[#BE3519] px-8 py-7 text-[#DFDAC3] shadow-[0_10px_20px_rgba(82,42,37,0.22)]"
+            className="relative flex min-h-40 flex-col justify-center overflow-hidden rounded-[0.7rem_0.95rem_0.8rem_1.05rem] border-2 border-[#404040] bg-[#000000] px-8 py-7 text-[#ffffff] shadow-[0_10px_20px_rgba(0,0,0,0.15)]"
           >
-            <span className="pointer-events-none absolute inset-x-4 top-3 border-t border-dashed border-[#522A25]/45" />
-            <span className="pointer-events-none absolute bottom-3 left-5 h-2 w-16 rounded-full bg-[#522A25]/15 blur-sm" />
+            <span className="pointer-events-none absolute inset-x-4 top-3 border-t border-dashed border-[#ffffff]/35" />
+            <span className="pointer-events-none absolute bottom-3 left-5 h-2 w-16 rounded-full bg-[#ffffff]/15 blur-sm" />
             <span
               id={stat.id}
-              className="font-display text-6xl leading-none text-[#DFDAC3] md:text-7xl"
+              className="font-display text-6xl leading-none text-[#ffffff] md:text-7xl"
             >
               0{stat.suffix}
             </span>
-            <span className="mt-2 font-body text-xs font-bold uppercase tracking-[0.22em] text-[#DFDAC3]/85">
+            <span className="mt-2 font-body text-xs font-bold uppercase tracking-[0.22em] text-[#ffffff]/85">
               {stat.label}
             </span>
           </motion.div>

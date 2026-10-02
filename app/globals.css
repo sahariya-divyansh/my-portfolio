@@ -5,19 +5,24 @@
   --font-display: var(--font-display), sans-serif;
   --font-body: var(--font-body), sans-serif;
 
-  --color-cream-accent: #DFDAC3;
-  --color-rust-red: #BE3519;
-  --color-dark-brown: #522A25;
+  --color-cream-accent: #ffffff;
+  --color-rust-red: #000000;
+  --color-dark-brown: #404040;
+
+  --color-background: #ffffff;
+  --color-border: #404040;
+  --color-foreground: #404040;
+  --color-muted-foreground: rgba(64, 64, 64, 0.6);
 }
 
 @utility text-stroke {
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1.25px #DFDAC3;
+  -webkit-text-stroke: 1.25px #ffffff;
 }
 
 @utility text-stroke-charcoal {
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 2px #522A25;
+  -webkit-text-stroke: 2px #404040;
 }
 
 /* Custom Scrollbar */
@@ -25,14 +30,14 @@
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #DFDAC3;
+  background: #ffffff;
 }
 ::-webkit-scrollbar-thumb {
-  background: #522A25;
+  background: #404040;
   border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #BE3519;
+  background: #000000;
 }
 
 /* Reset and basic setup */

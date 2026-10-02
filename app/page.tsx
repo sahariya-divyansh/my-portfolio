@@ -2,11 +2,13 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
+import GithubActivity from "@/components/GithubActivity";
 import Projects from "@/components/Projects";
 import Achievements from "@/components/Achievements";
 import Experience from "@/components/Experience";
 import Blogs from "@/components/Blogs";
 import Contact from "@/components/Contact";
+import { ContactIntro } from "@/components/ui/svg-follow-scroll";
 
 export default function Home() {
   return (
@@ -16,13 +18,15 @@ export default function Home() {
         <Hero />
         <About />
         <Skills />
+        <GithubActivity />
         <Projects />
         <Achievements />
         <Experience />
         <Blogs />
+        <ContactIntro />
         <Contact />
       </main>
-      <footer className="w-full py-8 text-center text-xs font-body text-[#522A25]/60 bg-[#DFDAC3] border-t border-[#522A25]/15 font-bold uppercase tracking-widest select-none">
+      <footer className="w-full py-8 text-center text-xs font-body text-[#404040]/60 bg-[#ffffff] border-t border-[#404040]/15 font-bold uppercase tracking-widest select-none">
         &copy; {new Date().getFullYear()} Divyansh Sahariya. All Rights Reserved.
       </footer>
     </>
