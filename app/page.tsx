@@ -1,14 +1,17 @@
+import dynamic from "next/dynamic";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
-import GithubActivity from "@/components/GithubActivity";
 import Projects from "@/components/Projects";
 import Achievements from "@/components/Achievements";
 import Experience from "@/components/Experience";
 import Blogs from "@/components/Blogs";
 import Contact from "@/components/Contact";
 import { ContactIntro } from "@/components/ui/svg-follow-scroll";
+import { ScrollPinOut, ScrollRevealIn } from "@/components/ui/section-scroll-transition";
+
+const GithubActivity = dynamic(() => import("@/components/GithubActivity"));
 
 export default function Home() {
   return (
@@ -18,8 +21,12 @@ export default function Home() {
         <Hero />
         <About />
         <Skills />
-        <GithubActivity />
-        <Projects />
+        <ScrollPinOut>
+          <GithubActivity />
+        </ScrollPinOut>
+        <ScrollRevealIn>
+          <Projects />
+        </ScrollRevealIn>
         <Achievements />
         <Experience />
         <Blogs />
