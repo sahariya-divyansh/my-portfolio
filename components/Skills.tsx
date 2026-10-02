@@ -1,37 +1,45 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useMemo } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const SKILLS_DATA = [
+const RAW_SKILLS_DATA = [
   {
     category: "Languages",
-    skills: ["TypeScript", "JavaScript", "Python", "SQL", "HTML5", "CSS3", "C++"],
+    skills: ["Python", "Java", "C/C++", "JavaScript", "TypeScript", "SQL", "PHP", "Go", "Rust"],
   },
   {
-    category: "Frameworks & Libraries",
-    skills: [
-      "React",
-      "Next.js (App Router)",
-      "Tailwind CSS",
-      "GSAP (ScrollTrigger)",
-      "Framer Motion",
-      "Node.js",
-      "Express.js",
-      "Redux Toolkit",
-    ],
+    category: "Web & Backend",
+    skills: ["React.js", "Node.js", "FastAPI", "HTML5", "CSS3", "Next.js", "Tailwind CSS", "Flutter"],
   },
   {
-    category: "Tools & Platforms",
-    skills: ["Git", "GitHub", "VS Code", "Vercel", "Figma", "Docker", "Firebase", "PostgreSQL"],
+    category: "Databases",
+    skills: ["PostgreSQL", "MongoDB", "SQL", "NoSQL"],
+  },
+  {
+    category: "DevOps & Tools",
+    skills: ["Docker", "Kubernetes", "Git/GitHub", "CI/CD", "Postman", "Vim", "LaTeX", "Ubuntu"],
+  },
+  {
+    category: "CS Core",
+    skills: ["DSA", "OS", "DBMS", "Computer Networks", "System Design", "OOP", "Software Testing & QA"],
+  },
+  {
+    category: "Machine Learning",
+    skills: ["Supervised/Unsupervised Learning", "Deep Learning", "CNN", "RNN", "Transformers", "NLP", "Computer Vision", "RL", "LLMs", "RAG", "Prompt Engineering", "Agentic AI"],
+  },
+  {
+    category: "ML Libraries",
+    skills: ["NumPy", "Pandas", "Scikit-learn", "PyTorch", "TensorFlow/Keras", "Hugging Face", "LangChain", "Matplotlib", "Seaborn", "FAISS", "ChromaDB/Pinecone"],
   },
 ];
 
 export default function Skills() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const skillsData = useMemo(() => RAW_SKILLS_DATA, []);
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -67,7 +75,7 @@ export default function Skills() {
           scale: 1,
           y: 0,
           duration: 0.6,
-          stagger: 0.05,
+          stagger: 0.03,
           ease: "back.out(1.5)",
           scrollTrigger: {
             trigger: card,
@@ -89,8 +97,8 @@ export default function Skills() {
           SKILLS & STACK
         </h2>
 
-        <div className="skills-grid grid grid-cols-1 gap-8 md:grid-cols-3">
-          {SKILLS_DATA.map((cat, catIdx) => (
+        <div className="skills-grid grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {skillsData.map((cat, catIdx) => (
             <div
               key={catIdx}
               className="skill-category-card flex flex-col gap-6 rounded-2xl border-2 border-dashed border-[#404040]/70 bg-transparent p-8"
