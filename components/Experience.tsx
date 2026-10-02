@@ -8,33 +8,23 @@ gsap.registerPlugin(ScrollTrigger);
 
 const EXPERIENCE_DATA = [
   {
-    role: "Senior Frontend Developer",
-    company: "Starlight Tech Solutions",
-    duration: "2025 - Present",
+    role: "Student Insider",
+    company: "Adobe",
+    duration: "Sep 2026 - Present",
+    meta: "2 mos · India",
     bullets: [
-      "Pioneered migration of legacy dashboard assets to Next.js 15 (App Router), improving page loading times by 40%.",
-      "Collaborated with UI/UX designers to implement pixel-perfect micro-animations, standardizing motion specs with Framer Motion.",
-      "Mentored junior engineers and conducted structured sessions on semantic HTML and responsive practices.",
+      "Selected as one of 100 Adobe Student Insiders from nearly 19,000 applicants across India.",
+      "Collaborating with Adobe teams, sharing student perspectives, and gaining industry and mentorship experience.",
     ],
   },
   {
-    role: "Frontend Engineer",
-    company: "Hyperion Lab Inc.",
-    duration: "2024 - 2025",
+    role: "Open Source Contributor",
+    company: "GirlScript Summer of Code",
+    duration: "Jul 2026 - Aug 2026",
+    meta: "2 mos · Remote",
     bullets: [
-      "Developed modular dashboard panels utilizing React and TypeScript, managing server-state caching efficiently.",
-      "Optimized build systems and localized chunk sizes, decreasing final JS bundle size by 18%.",
-      "Drafted comprehensive unit and integration test coverage matching 90%+ target validation.",
-    ],
-  },
-  {
-    role: "Software Developer Intern",
-    company: "Apex Digital Systems",
-    duration: "2023 - 2024",
-    bullets: [
-      "Engineered clean semantic UI components with HTML, CSS, and vanilla JavaScript for corporate landing pages.",
-      "Integrated REST API endpoints and verified request schemas, coordinating closely with backend leads.",
-      "Identified and resolved critical memory leaks, elevating client-side performance.",
+      "Selected as an Open Source Contributor for GirlScript Summer of Code 2026 (GSSoC'26).",
+      "Contributed to real-world open-source projects through pull requests, issue resolution, feature development, and collaboration with maintainers and developers.",
     ],
   },
 ];
@@ -106,7 +96,7 @@ export default function Experience() {
               {/* Entry Content */}
               <div>
                 <span className="font-body text-xs md:text-sm font-bold text-[#404040]/60 uppercase tracking-widest block mb-1">
-                  {exp.duration} &bull; {exp.company}
+                  {exp.duration} &bull; {exp.company} {exp.meta && `\u2022 ${exp.meta}`}
                 </span>
                 <h3 className="font-body text-xl md:text-2xl font-bold uppercase tracking-wider text-[#404040] mb-4">
                   {exp.role}
